@@ -1,7 +1,5 @@
 # javaranch-data
-JSON formatted java trivia
-
-Cleaning up and formatting java questions from the [java ranch roundup game](http://www.javaranch.com/roundup.jsp)
+Cleaning up and formatting java questions from the [java ranch roundup game](http://www.javaranch.com/roundup.jsp). Want to use the data? Look [here](http://seanastephens.github.io/javaranch-data/questions.json).
 
 # JSON Layout
 
