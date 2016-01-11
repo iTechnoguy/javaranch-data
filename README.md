@@ -1,5 +1,5 @@
 # javaranch-data
-Cleaning up and formatting java questions from the [java ranch roundup game](http://www.javaranch.com/roundup.jsp). Want to use the data? Look [here](http://seanastephens.github.io/javaranch-data/questions.json).
+Cleaning up and formatting java questions from the [java ranch roundup game](http://www.javaranch.com/roundup.jsp). Want to use the data? Look [here](http://seanastephens.github.io/javaranch-data/questions.json) for v1 and [here](http://seanastephens.github.io/javaranch-data/questions.v2.json) for v2.
 
 # JSON Layout
 
