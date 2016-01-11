@@ -14,3 +14,22 @@ Cleaning up and formatting java questions from the [java ranch roundup game](htt
         ]
       }
     ]
+
+# V2 JSON Layout
+
+    [
+      {
+       "id": "1",
+       "question": "A string question related to some detail of java",
+       "answers": [
+		 {
+		   "answer": "A string answer to the line element question",
+		 },
+		 {
+		   "answer": "A string answer to the line element question",
+		   "correct": "truthy value if this is the correct answer"
+		 }
+	   ]
+       "explanation": "A string explanation as to why the answer is correct",
+      }
+    ]
