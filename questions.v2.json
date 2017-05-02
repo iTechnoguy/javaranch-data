@@ -1967,13 +1967,6 @@
         ],
         "explanation": "When a key exists, the value gets replaced (see slide #27)",
         "id": "150",
-        "question": "HashMap<String, BigInteger> hm = new HashMap<String, BigInteger>();\\n
-        hm.put(\"a\", new BigInteger(\"123456\"));\\n
-        hm.put(\"b\", new BigInteger(\"1234567\"));\\n
-        hm.put(\"c\", new BigInteger(\"1234567\"));\\n
-        hm.put(\"a\", new BigInteger(\"654321\"));\\n
-        BigInteger aBigInt = hm.get(\"a\");\\n
-        assertEquals(123456, aBigInt.intValue());\\n\\n
-        Does this assertion pass?"
+        "question": "hm is a Java HasMap:\\n\\nhm.put(\"a\", new BigInteger(\"123456\"));\\nhm.put(\"b\", new BigInteger(\"1234567\"));\\nhm.put(\"c\", new BigInteger(\"1234567\"));\\nhm.put(\"a\", new BigInteger(\"654321\"));\\nBigInteger aBigInt = hm.get(\"a\");\\nassertEquals(123456, aBigInt.intValue());\\n\\nDoes this assertion pass?"
     }
 ]
