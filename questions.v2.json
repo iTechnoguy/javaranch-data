@@ -1954,19 +1954,5 @@
         "explanation": "",
         "id": "149",
         "question": "Composes objects into tree structures to represent part-whole hierarchies."
-    },
-    {
-        "answers": [
-            {
-                "answer": "Yes"
-            },
-            {
-                "answer": "No",
-                "correct": "true"
-            }
-        ],
-        "explanation": "When a key exists, the value gets replaced (see slide #27)",
-        "id": "150",
-        "question": "hm is a Java HasMap:\\n\\nhm.put(\"a\", new BigInteger(\"123456\"));\\nhm.put(\"b\", new BigInteger(\"1234567\"));\\nhm.put(\"c\", new BigInteger(\"1234567\"));\\nhm.put(\"a\", new BigInteger(\"654321\"));\\nBigInteger aBigInt = hm.get(\"a\");\\nassertEquals(123456, aBigInt.intValue());\\n\\nDoes this assertion pass?"
     }
 ]
