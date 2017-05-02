@@ -67,40 +67,6 @@
     {
         "answers": [
             {
-                "answer": "8 bits"
-            },
-            {
-                "answer": "7 bits"
-            },
-            {
-                "answer": "32 bits"
-            },
-            {
-                "answer": "16 bits",
-                "correct": "true"
-            }
-        ],
-        "explanation": "Chars in Java are all 16-bit Unicode.",
-        "id": "5",
-        "question": "What's the bit-depth of a char?"
-    },
-    {
-        "answers": [
-            {
-                "answer": "7 bits"
-            },
-            {
-                "answer": "8 bits",
-                "correct": "true"
-            }
-        ],
-        "explanation": "Bytes are always 8 bits. The left-most bit is used to represent the sign.",
-        "id": "6",
-        "question": "What is the bit-depth of a byte?"
-    },
-    {
-        "answers": [
-            {
                 "answer": "float"
             },
             {
@@ -145,23 +111,6 @@
         "explanation": "Think of a call to System.gc( ) as a... suggestion. Garbage collection may or may not actually occur.",
         "id": "9",
         "question": "Does a call to System.gc() force garbage collection to take place? (assuming there are objects to be collected)"
-    },
-    {
-        "answers": [
-            {
-                "answer": "!"
-            },
-            {
-                "answer": "-"
-            },
-            {
-                "answer": "~",
-                "correct": "true"
-            }
-        ],
-        "explanation": "The ~ operator performs a bitwise inversion (flips the bits!).",
-        "id": "10",
-        "question": "Which of these operators would cause the bit pattern 00111100 to become 11000011?"
     },
     {
         "answers": [
@@ -666,46 +615,6 @@
     {
         "answers": [
             {
-                "answer": "short - 16 bits"
-            },
-            {
-                "answer": "int - 16 bits"
-            },
-            {
-                "answer": "byte - 8 bits"
-            },
-            {
-                "answer": "int - 64 bits"
-            },
-            {
-                "answer": "int - 32 bits",
-                "correct": "true"
-            }
-        ],
-        "explanation": "integer literals are always treated as 32-bit ints",
-        "id": "45",
-        "question": "Integer literals are always what size?"
-    },
-    {
-        "answers": [
-            {
-                "answer": "Never"
-            },
-            {
-                "answer": "With explicit cast"
-            },
-            {
-                "answer": "Yes",
-                "correct": "true"
-            }
-        ],
-        "explanation": "You don't need an explicit cast to use the increment unary operator.",
-        "id": "46",
-        "question": "Can you use an increment unary operator on a byte? (example: byte b=4; b++;)"
-    },
-    {
-        "answers": [
-            {
                 "answer": "Compiler error"
             },
             {
@@ -757,23 +666,6 @@
     {
         "answers": [
             {
-                "answer": "You get 0"
-            },
-            {
-                "answer": "You get -1"
-            },
-            {
-                "answer": "You get 270>>1",
-                "correct": "true"
-            }
-        ],
-        "explanation": "Shifting bits by a number greater than or equal to the number of bits in the result (eg. 32 bits for an int) will cause the value to be shifted by the number modulo the number of bits in the value (you shift by 33%32 which is 1).",
-        "id": "50",
-        "question": "What happens when you bit shift by a number greater than or equal to the number of bits in the result? (eg. int c=270; c>>33)"
-    },
-    {
-        "answers": [
-            {
                 "answer": "Must explicitly cast"
             },
             {
@@ -787,26 +679,6 @@
         "explanation": "Java promotes the smaller type to the wider of the types being compared. So when comparing a byte to an int, the byte is first promoted to an int.",
         "id": "51",
         "question": "What happens when you compare two primitives of different numerical types?"
-    },
-    {
-        "answers": [
-            {
-                "answer": " is the regular OR operator."
-            },
-            {
-                "answer": "~"
-            },
-            {
-                "answer": "&"
-            },
-            {
-                "answer": "^",
-                "correct": "true"
-            }
-        ],
-        "explanation": "The ^ is the Exclusive-OR operator. ",
-        "id": "52",
-        "question": "Which of these is the Exclusive-OR (XOR) operator?"
     },
     {
         "answers": [
@@ -1152,57 +1024,6 @@
         "explanation": "You always get a copy of whatever is in the variable -- either a primitive or a reference. So for objects, you get a copy of the reference.",
         "id": "76",
         "question": "When you pass an object reference as an argument to a method call, what gets passed?"
-    },
-    {
-        "answers": [
-            {
-                "answer": "They wrap around"
-            },
-            {
-                "answer": "They're added to result"
-            },
-            {
-                "answer": "They'e gone",
-                "correct": "true"
-            }
-        ],
-        "explanation": "Bits moved off the end of any shift operation are just gone. History. Vaporized.",
-        "id": "77",
-        "question": "When using the right-shift operator (>>), what happens to the bits which move off the right end?"
-    },
-    {
-        "answers": [
-            {
-                "answer": "true"
-            },
-            {
-                "answer": "compiler error"
-            },
-            {
-                "answer": "false",
-                "correct": "true"
-            }
-        ],
-        "explanation": "\" ^ \" is the Exclusive-OR operator -- it only returns true if just ONE of the values is true.",
-        "id": "78",
-        "question": "x=true; y=true; What is the result of x ^ y?"
-    },
-    {
-        "answers": [
-            {
-                "answer": "true"
-            },
-            {
-                "answer": "compiler error"
-            },
-            {
-                "answer": "false",
-                "correct": "true"
-            }
-        ],
-        "explanation": "\"&\" is the AND operator. For a logical expression, the result will be true only if BOTH values are true. (For bitwise AND, both bits must be 1)",
-        "id": "79",
-        "question": "x=true; y=false; What is the result of x&y?"
     },
     {
         "answers": [
@@ -1656,82 +1477,6 @@
     {
         "answers": [
             {
-                "answer": "11001010"
-            },
-            {
-                "answer": "10101100"
-            },
-            {
-                "answer": "00001010",
-                "correct": "true"
-            }
-        ],
-        "explanation": "The right shift operator fills from the left with the value of the sign bit (in this case, 0).",
-        "id": "111",
-        "question": "Assume the bit value of byte x is 00101011. What is the result of x>>2;"
-    },
-    {
-        "answers": [
-            {
-                "answer": "positive"
-            },
-            {
-                "answer": "negative",
-                "correct": "true"
-            }
-        ],
-        "explanation": "The right-shift operator fills all bits from the left with the same value as the original sign bit -- in this case 1.",
-        "id": "112",
-        "question": "Assume the bit pattern of byte x is: 10110001. What will the sign of x be after x>>2;"
-    },
-    {
-        "answers": [
-            {
-                "answer": "keep it negative"
-            },
-            {
-                "answer": "change its sign",
-                "correct": "true"
-            }
-        ],
-        "explanation": "The unsigned right-shift operator always fills from the left with zero, so the result will always become positive.",
-        "id": "113",
-        "question": "What does the unsigned right-shift operator do to a negative number?"
-    },
-    {
-        "answers": [
-            {
-                "answer": "11110011"
-            },
-            {
-                "answer": "00000000"
-            },
-            {
-                "answer": "00110000",
-                "correct": "true"
-            }
-        ],
-        "explanation": "The bitwise AND operator, &, will result in bit values of 1 only if BOTH bits being compared are 1.",
-        "id": "114",
-        "question": "What is the result of 00110011 & 11110000 ?"
-    },
-    {
-        "answers": [
-            {
-                "answer": "false"
-            },
-            {
-                "answer": "true",
-                "correct": "true"
-            }
-        ],
-        "explanation": "Short-circuit operators work only on logical expressions; they make boolean tests more efficient by not testing both operands unless its necessary. ",
-        "id": "115",
-        "question": "The short-circuit operators work on boolean types, not bits."
-    },
-    {
-        "answers": [
-            {
                 "answer": "false"
             },
             {
@@ -2039,34 +1784,6 @@
         "explanation": "The finally block will ALWAYS run... unless the try/catch calls System.exit().",
         "id": "137",
         "question": "A finally block will only be executed if the exception is not caught."
-    },
-    {
-        "answers": [
-            {
-                "answer": "false"
-            },
-            {
-                "answer": "true",
-                "correct": "true"
-            }
-        ],
-        "explanation": "A MalformedURLException is checked by the compiler to be sure that the \"handle or declare\" rule is followed.",
-        "id": "138",
-        "question": "A MalformedURLException is a checked exception."
-    },
-    {
-        "answers": [
-            {
-                "answer": "true"
-            },
-            {
-                "answer": "false",
-                "correct": "true"
-            }
-        ],
-        "explanation": "ArithmeticExceptions are considered programmer problems, and are NOT checked by the compiler. A divide-by-zero error, for example, should be checked for by your own code.",
-        "id": "139",
-        "question": "An ArithmeticException is a checked exception."
     },
     {
         "answers": [
