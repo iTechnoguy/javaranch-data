@@ -1855,4 +1855,125 @@
         "id": "144",
         "question": "It is legal to declare an array with an interface as the type (instead of a class or primitive) -- example: PetInterface []p;"
     }
+    {
+        "answers": [
+            {
+                "answer": "Flyweight"
+            },
+            {
+                "answer": "Singleton",
+                "correct": "true"
+            },
+            {
+                "answer": "Builder"
+            },
+            {
+                "answer": "Factory"
+            }
+        ],
+        "explanation": "",
+        "id": "145",
+        "question": "This design pattern ensures a class has only one instance and there is a global point of access to it."
+    },
+    {
+        "answers": [
+            {
+                "answer": "Visitor"
+            },
+            {
+                "answer": "Proxy"
+            },
+            {
+                "answer": "Chain of Responsiblity"
+            },
+            {
+                "answer": "Iterator",
+                "correct": "true"
+            }
+        ],
+        "explanation": "",
+        "id": "146",
+        "question": "Provides a way to access the elements of a collection sequentially without revealing the underlying implementation."
+    },
+    {
+        "answers": [
+            {
+                "answer": "Strategy",
+                "correct": "true"
+            },
+            {
+                "answer": "Memento"
+            },
+            {
+                "answer": "Chain of Responsiblity"
+            },
+            {
+                "answer": "Adapter"
+            }
+        ],
+        "explanation": "",
+        "id": "147",
+        "question": "Allows for an algorithm to be interchangeable with other algorithms."
+    },
+    {
+        "answers": [
+            {
+                "answer": "Flyweight",
+                "correct": "true"
+            },
+            {
+                "answer": "Interpreter"
+            },
+            {
+                "answer": "Bridge"
+            },
+            {
+                "answer": "Command"
+            }
+        ],
+        "explanation": "See lecture deck 27",
+        "id": "148",
+        "question": "What design pattern is this an example of? \"Do not create a new Integer(1), just return a reference to that instance from the existing pool of Integers -128..127\""
+    },
+    {
+        "answers": [
+            {
+                "answer": "Decorator"
+            },
+            {
+                "answer": "Composite",
+                "correct": "true"
+            },
+            {
+                "answer": "Interpreter"
+            },
+            {
+                "answer": "Façade"
+            }
+        ],
+        "explanation": "",
+        "id": "149",
+        "question": "Composes objects into tree structures to represent part-whole hierarchies."
+    },
+    {
+        "answers": [
+            {
+                "answer": "Yes"
+            },
+            {
+                "answer": "No",
+                "correct": "true"
+            }
+        ],
+        "explanation": "When a key exists, the value gets replaced (see slide #27)",
+        "id": "150",
+        "question": "HashMap<String, BigInteger> hm = new HashMap<String, BigInteger>();\\n
+        hm.put(\"a\", new BigInteger(\"123456\"));\\n
+        hm.put(\"b\", new BigInteger(\"1234567\"));\\n
+        hm.put(\"c\", new BigInteger(\"1234567\"));\\n
+        hm.put(\"a\", new BigInteger(\"654321\"));\\n
+        BigInteger aBigInt = hm.get(\"a\");\\n
+        assertEquals(123456, aBigInt.intValue());\\n\\n
+        Does this assertion pass?"
+    }
 ]
