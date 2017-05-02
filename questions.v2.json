@@ -1854,7 +1854,7 @@
         "explanation": "One of the best uses of polymorphism in Java is to declare an array using an interface type, then add objects which can be from any class, as long as they implement the interface type of the array.",
         "id": "144",
         "question": "It is legal to declare an array with an interface as the type (instead of a class or primitive) -- example: PetInterface []p;"
-    }
+    },
     {
         "answers": [
             {
