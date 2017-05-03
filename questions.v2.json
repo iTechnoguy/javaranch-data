@@ -483,20 +483,6 @@
     {
         "answers": [
             {
-                "answer": "true"
-            },
-            {
-                "answer": "false",
-                "correct": "true"
-            }
-        ],
-        "explanation": "This rule only applies to \"checked\" exceptions -- the exceptions which are subclasses of Exception but not subclasses of RuntimeException.",
-        "id": "36",
-        "question": "When you override a method, the overriding method in the subclass must not declare ANY new exceptions not declared by the overridden method."
-    },
-    {
-        "answers": [
-            {
                 "answer": "No"
             },
             {
@@ -1244,20 +1230,6 @@
     {
         "answers": [
             {
-                "answer": "true"
-            },
-            {
-                "answer": "false",
-                "correct": "true"
-            }
-        ],
-        "explanation": "The case argument must be either an int literal, or an int-compatible variable which is a constant (i.e. static final).",
-        "id": "95",
-        "question": "In a switch statement, the argument to the case label (case: argument) can be any variable which can fit within an int."
-    },
-    {
-        "answers": [
-            {
                 "answer": "false"
             },
             {
@@ -1355,20 +1327,6 @@
         "explanation": "ArithmeticException is a RuntimeException, so the rules about overriding methods not throwing new or broader exceptions does not apply.",
         "id": "102",
         "question": "An overriding method of a subclass can throw an Arithmetic Exception not thrown by the original (overriden) method."
-    },
-    {
-        "answers": [
-            {
-                "answer": "true"
-            },
-            {
-                "answer": "false",
-                "correct": "true"
-            }
-        ],
-        "explanation": "This would be true for overriding methods, but overloaded methods are free to throw new checked exceptions.",
-        "id": "103",
-        "question": "Overloaded methods must not throw new checked exceptions not thrown by the original method."
     },
     {
         "answers": [
@@ -1473,20 +1431,6 @@
         "explanation": "You don't have to have any public classes in your source files.",
         "id": "110",
         "question": "Are you required to have a public class in each source file?"
-    },
-    {
-        "answers": [
-            {
-                "answer": "false"
-            },
-            {
-                "answer": "true",
-                "correct": "true"
-            }
-        ],
-        "explanation": "No access modifier means \"default\" which means \"only to others in the package\".",
-        "id": "116",
-        "question": "Methods which have no access modifier can only be accessed by classes within the same package. TRUE or FALSE:"
     },
     {
         "answers": [
@@ -1714,20 +1658,6 @@
         "explanation": "It will compile, because the myX object might really have been a Y object all along (as far as the compiler knows), but at runtime it will fail.",
         "id": "132",
         "question": "Class Y is a subclass of class X. Will this compile? X myX = new X(); Y myY = (Y) myX;"
-    },
-    {
-        "answers": [
-            {
-                "answer": "false"
-            },
-            {
-                "answer": "true",
-                "correct": "true"
-            }
-        ],
-        "explanation": "The switch can obviously hold a variable, because that's what you're testing! But the variable cannot be anything except an int-compatible primitive.",
-        "id": "133",
-        "question": "In a switch statement, the argument to the switch ( ) can be a variable as long as it is compatible with an int."
     },
     {
         "answers": [
